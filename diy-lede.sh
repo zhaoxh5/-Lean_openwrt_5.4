@@ -43,7 +43,7 @@ rm -rf ./package/base-files/files/etc/banne && cd .. && cp -f ./banner openwrt/p
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome  #adguardhome去广告
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/lean/luci-app-passwall  #passwall出国软件
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package package/lean/package  #passwall出国软件配套
-src-git kenzok https://github.com/kenzok8/openwrt-packages/luci-app-adguardhome/
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome/ package/lean/luci-app-adguardhome
 
 rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 #全新的[argon-主题]此主题玩法很多,这里看说明【https://github.com/jerrykuku/luci-theme-argon/blob/18.06/README_ZH.md】
